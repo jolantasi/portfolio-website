@@ -106,25 +106,48 @@
 	 max-width: 1200px;
 	 padding: 0 20px;
 	 border-radius: 20px;
-	/* round section edges */
+}
+/* =========================== CONTACT PAGE =========================== */
+ .contact-info, .contact-form {
+	 text-align: center;
+	 margin: 0 auto 40px auto;
+	 max-width: 600px;
+	 background-color: var(--color-grid-item-bg);
+	 padding: 20px;
+	 border-radius: 12px;
+	 box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+ .contact-info a, .contact-form a {
+	 color: var(--color-link);
+}
+ .contact-info input, .contact-form input, .contact-info textarea, .contact-form textarea {
+	 width: 100%;
+	 max-width: 400px;
+	 margin-top: 5px;
+	 margin-bottom: 15px;
+	 padding: 10px;
+	 border-radius: 6px;
+	 border: 1px solid #ccc;
+	 font-family: inherit;
+	 font-size: 1rem;
+}
+ .contact-info textarea, .contact-form textarea {
+	 min-height: 100px;
+	 resize: vertical;
 }
 /* =========================== GRID LAYOUT =========================== */
  .grid {
 	 display: grid;
 	 grid-template-columns: repeat(3, 1fr);
-	/* Default: 2 columns on laptops */
 	 gap: 20px;
 	 margin: 0 auto;
-	/* One column on small devices */
 }
  .grid__item {
 	 background-color: var(--color-grid-item-bg);
 	 border-radius: 12px;
 	 padding: 15px;
 	 max-width: 380px;
-	/* limit card width */
 	 margin: 0 auto;
-	/* center within grid */
 	 transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
  .grid__item:hover {
@@ -134,9 +157,7 @@
  .grid__item img {
 	 width: 100%;
 	 max-width: 350px;
-	/* slightly wider */
 	 height: 200px;
-	/* taller for better aspect ratio */
 	 object-fit: cover;
 	 border-radius: 8px;
 	 display: block;
@@ -169,6 +190,7 @@
 	 border-bottom: var(--border-bottom-btn);
 	 transition: opacity var(--transition-opacity);
 	 text-align: center;
+	 display: inline-block;
 }
  #button:hover, .btn:hover, #button:focus, .btn:focus {
 	 cursor: pointer;

@@ -135,6 +135,14 @@
 	 min-height: 100px;
 	 resize: vertical;
 }
+/* Ensure Contact Me button text is visible */
+ .contact-info .btn {
+	 background-color: var(--color-btn-bg) !important;
+	 color: #fff !important;
+	 font-weight: 600;
+	 margin-top: 10px;
+	 display: inline-block;
+}
 /* =========================== GRID LAYOUT =========================== */
  .grid {
 	 display: grid;

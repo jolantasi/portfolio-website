@@ -10,9 +10,7 @@ Short introduction about me
 
 Direct links to selected work examples
 
-Optional featured project section
-
-About Page
+Featured project section
 
 Overview of who I am
 

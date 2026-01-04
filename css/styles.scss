@@ -113,6 +113,7 @@ a {
 .profile {
   max-width: 700px;
   margin: 0 auto;
+  padding: 0 20px;
 
   &__portrait {
     float: left;
@@ -301,4 +302,98 @@ a {
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* =========================
+   Case Study – Portfolio
+   ========================= */
+
+   .case-study {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  line-height: 1.7;
+}
+
+.case-study__intro {
+  margin-bottom: 3rem;
+}
+
+.case-study__subtitle {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.case-study__section {
+  margin-bottom: 3.5rem;
+}
+
+.case-study__section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.case-study__section h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.case-study__step {
+  padding-left: 1rem;
+  border-left: 3px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.case-study__step code {
+  background-color: #f4f4f4;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.case-study__end {
+  background-color: #fafafa;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.case-study__links {
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.case-study__links a {
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  body {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .profile__portrait {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+    width: 180px;
+  }
+
+  .profile {
+    text-align: center;
+  }
+
+  .case-study {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .case-study p {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

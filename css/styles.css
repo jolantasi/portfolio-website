@@ -281,13 +281,17 @@
 	 margin: 0 auto;
 	 padding: 2rem 1.5rem;
 	 line-height: 1.7;
+	 font-family: 'Lato', sans-serif;
+	 color: #333;
 }
  .case-study__intro {
 	 margin-bottom: 3rem;
+	 text-align: center;
 }
  .case-study__subtitle {
 	 font-size: 1.1rem;
 	 color: #666;
+	 margin-top: 0.5rem;
 }
  .case-study__section {
 	 margin-bottom: 3.5rem;
@@ -295,22 +299,43 @@
  .case-study__section h2 {
 	 margin-bottom: 1rem;
 	 font-size: 1.8rem;
+	 border-bottom: 2px solid #e0e0e0;
+	 padding-bottom: 0.3rem;
 }
  .case-study__section h3 {
 	 margin-top: 1.5rem;
 	 margin-bottom: 0.5rem;
 	 font-size: 1.2rem;
+	 color: #5a4a42;
+}
+ .case-study__section p, .case-study__section ul {
+	 margin-bottom: 1rem;
+	 line-height: 1.6;
+}
+ .case-study__section ul {
+	 padding-left: 1.5rem;
+	 list-style: disc;
 }
  .case-study__step {
-	 padding-left: 1rem;
-	 border-left: 3px solid #ddd;
+	 padding: 1rem 1rem 1rem 1.2rem;
+	 border-left: 4px solid #357b70;
 	 margin-bottom: 2rem;
+	 background-color: #fefaf2;
+	 border-radius: 8px;
+	/* Optional: highlight challenges and solutions visually */
 }
  .case-study__step code {
 	 background-color: #f4f4f4;
 	 padding: 0.2rem 0.4rem;
 	 border-radius: 4px;
 	 font-size: 0.9rem;
+	 font-family: monospace;
+}
+ .case-study__step p strong {
+	 display: inline-block;
+	 background-color: #fcffad 33;
+	 padding: 0 0.3rem;
+	 border-radius: 3px;
 }
  .case-study__end {
 	 background-color: #fafafa;
@@ -324,12 +349,17 @@
  .case-study__links a {
 	 text-decoration: none;
 	 border-bottom: 1px solid currentColor;
+	 color: var(--color-link);
+}
+ .case-study__links a:hover {
+	 color: var(--color-link-active);
 }
  .case-study__figure {
 	 margin: 3rem 0;
 	 padding: 1.5rem;
 	 background-color: #f9f9f9;
 	 border-radius: 16px;
+	 text-align: center;
 }
  .case-study__figure img {
 	 display: block;
@@ -344,31 +374,29 @@
 	 margin-top: 1rem;
 	 font-size: 0.9rem;
 	 color: #666;
-	 text-align: center;
 }
-/* Responsive tweaks */
+/* ========================= Responsive tweaks =========================== */
  @media (max-width: 600px) {
 	 body {
 		 padding-left: 12px;
 		 padding-right: 12px;
 	}
-	 .profile__portrait {
-		 float: none;
-		 display: block;
-		 margin: 0 auto 20px;
-		 width: 180px;
-	}
-	 .profile {
-		 text-align: center;
-	}
 	 .case-study {
 		 padding-left: 1rem;
 		 padding-right: 1rem;
 	}
-	 .case-study p {
+	 .case-study p, .case-study ul {
 		 max-width: 65ch;
 		 margin-left: auto;
 		 margin-right: auto;
+	}
+	 .case-study__step {
+		 padding-left: 1rem;
+		 border-left-width: 3px;
+	}
+	 .case-study__figure img {
+		 max-width: 100%;
+		 height: auto;
 	}
 }
  

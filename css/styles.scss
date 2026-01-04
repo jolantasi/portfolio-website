@@ -313,27 +313,142 @@ a {
   margin: 0 auto;
   padding: 2rem 1.5rem;
   line-height: 1.7;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+
+  &__intro {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+
+  &__section {
+    margin-bottom: 3.5rem;
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: #5a4a42;
+    }
+
+    p, ul {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      list-style: disc;
+    }
+  }
+
+  &__step {
+    padding: 1rem 1rem 1rem 1.2rem;
+    border-left: 4px solid #357b70;
+    margin-bottom: 2rem;
+    background-color: #fefaf2;
+    border-radius: 8px;
+
+    code {
+      background-color: #f4f4f4;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-family: monospace;
+    }
+
+    /* Optional: highlight challenges and solutions visually */
+    p strong {
+      display: inline-block;
+      background-color: #fcffad33;
+      padding: 0 0.3rem;
+      border-radius: 3px;
+    }
+  }
+
+  &__end {
+    background-color: #fafafa;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
+  &__links {
+    margin-top: 2rem;
+    font-weight: 500;
+
+    a {
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+      color: var(--color-link);
+
+      &:hover {
+        color: var(--color-link-active);
+      }
+    }
+  }
+
+  &__figure {
+    margin: 3rem 0;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    text-align: center;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      background-color: #fff;
+      margin: 0 auto;
+    }
+
+    figcaption {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  }
 }
 
-.case-study__intro { margin-bottom: 3rem; }
-.case-study__subtitle { font-size: 1.1rem; color: #666; }
-.case-study__section { margin-bottom: 3.5rem; }
-.case-study__section h2 { margin-bottom: 1rem; font-size: 1.8rem; }
-.case-study__section h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.2rem; }
-.case-study__step { padding-left: 1rem; border-left: 3px solid #ddd; margin-bottom: 2rem; }
-.case-study__step code { background-color: #f4f4f4; padding: 0.2rem 0.4rem; border-radius: 4px; font-size: 0.9rem; }
-.case-study__end { background-color: #fafafa; padding: 2rem; border-radius: 8px; }
-.case-study__links { margin-top: 2rem; font-weight: 500; }
-.case-study__links a { text-decoration: none; border-bottom: 1px solid currentColor; }
-.case-study__figure { margin: 3rem 0; padding: 1.5rem; background-color: #f9f9f9; border-radius: 16px; }
-.case-study__figure img { display: block; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #e0e0e0; background-color: #ffffff; margin: 0 auto; }
-.case-study__figure figcaption { margin-top: 1rem; font-size: 0.9rem; color: #666; text-align: center; }
-
-/* Responsive tweaks */
+/* =========================
+   Responsive tweaks
+=========================== */
 @media (max-width: 600px) {
   body { padding-left: 12px; padding-right: 12px; }
-  .profile__portrait { float: none; display: block; margin: 0 auto 20px; width: 180px; }
-  .profile { text-align: center; }
-  .case-study { padding-left: 1rem; padding-right: 1rem; }
-  .case-study p { max-width: 65ch; margin-left: auto; margin-right: auto; }
+
+  .case-study {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    p, ul {
+      max-width: 65ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__step {
+      padding-left: 1rem;
+      border-left-width: 3px;
+    }
+
+    &__figure img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
